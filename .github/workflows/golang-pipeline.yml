@@ -7,10 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Vet
+      - name: Проверка кода
         run: |
           go vet ./...
-      - name: Test
+      - name: Запуск тестов
         run: |
           go test ./...
 
